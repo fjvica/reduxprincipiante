@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import MenuItem from '@material-ui/core/MenuItem';
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
         menuButton: {
           marginRight: theme.spacing(2),
         },
-        title: {
+        link: {
          
         },
       }));
@@ -26,10 +27,10 @@ const Navbar = () => {
         <AppBar position="sticky">
         <Toolbar >
           <Typography className={classes.menuButton} variant="h6">
-            Redux
+            <Link to={'/'} style={{ textDecoration: 'none', color:"white" }}>Redux</Link>
           </Typography>
           <Typography>
-            <MenuItem>Crear un producto</MenuItem>
+          <MenuItem component={Link} to={'/productos/nuevo'}>Crear un producto</MenuItem>
            </Typography>
         </Toolbar>
       </AppBar>
