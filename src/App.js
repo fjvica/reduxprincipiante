@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <Fragment>
-      <h1>OLEEE</h1>
+      <Navbar />
     </Fragment>
   );
 }
