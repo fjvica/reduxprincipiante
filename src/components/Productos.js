@@ -45,15 +45,15 @@ const Productos = () => {
     
     return ( 
         <Fragment>
-            <Container maxWidth="lg" className={classes.general}>
+            <Container maxWidth="md" className={classes.general}>
                 <Typography className={classes.titulo} variant="h6" align={'center'}>Listado de productos</Typography>
             <TableContainer component={Paper}>
                 <Table aria-label="simple table">
                     <TableHead>
                     <TableRow>
-                        <TableCell>Nombre</TableCell>
-                        <TableCell>Precio</TableCell>
-                        <TableCell>Acciones</TableCell>
+                        <TableCell width="30%" align="center">Nombre</TableCell>
+                        <TableCell width="30%" align="center">Precio</TableCell>
+                        <TableCell width="30%" align="center">Acciones</TableCell>
                     </TableRow>
                     </TableHead>
                     <TableBody>
